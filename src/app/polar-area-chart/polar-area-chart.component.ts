@@ -3,19 +3,19 @@ import { Component, OnInit } from '@angular/core';
 import { Chart } from 'chart.js';
 
 @Component({
-  selector: 'app-bar-chart',
-  templateUrl: './bar-chart.component.html',
-  styleUrls: ['./bar-chart.component.css']
+  selector: 'app-polar-area-chart',
+  templateUrl: './polar-area-chart.component.html',
+  styleUrls: ['./polar-area-chart.component.css']
 })
-export class BarChartComponent implements OnInit {
+export class PolarAreaChartComponent implements OnInit {
 
   chart: object;
 
   constructor() { }
 
   ngOnInit() {
-    this.chart = new Chart('bar-chart', {
-      type: 'bar',
+    this.chart = new Chart('polar-area-chart', {
+      type: 'polarArea',
       data: {
         labels: ['Africa', 'Asia', 'Europe', 'Latin America', 'North America'],
         datasets: [
@@ -27,7 +27,6 @@ export class BarChartComponent implements OnInit {
         ]
       },
       options: {
-        legend: { display: false },
         title: {
           display: true,
           text: 'Predicted world population (millions) in 2050'
@@ -35,4 +34,5 @@ export class BarChartComponent implements OnInit {
       }
   });
   }
+
 }

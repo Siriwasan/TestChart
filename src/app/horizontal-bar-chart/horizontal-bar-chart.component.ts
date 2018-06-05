@@ -3,19 +3,19 @@ import { Component, OnInit } from '@angular/core';
 import { Chart } from 'chart.js';
 
 @Component({
-  selector: 'app-bar-chart',
-  templateUrl: './bar-chart.component.html',
-  styleUrls: ['./bar-chart.component.css']
+  selector: 'app-horizontal-bar-chart',
+  templateUrl: './horizontal-bar-chart.component.html',
+  styleUrls: ['./horizontal-bar-chart.component.css']
 })
-export class BarChartComponent implements OnInit {
+export class HorizontalBarChartComponent implements OnInit {
 
   chart: object;
 
   constructor() { }
 
   ngOnInit() {
-    this.chart = new Chart('bar-chart', {
-      type: 'bar',
+    this.chart = new Chart('horizontal-bar-chart', {
+      type: 'horizontalBar',
       data: {
         labels: ['Africa', 'Asia', 'Europe', 'Latin America', 'North America'],
         datasets: [
@@ -35,4 +35,5 @@ export class BarChartComponent implements OnInit {
       }
   });
   }
+
 }
