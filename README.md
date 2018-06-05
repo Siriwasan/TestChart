@@ -21,4 +21,5 @@ import { Chart } from 'chart.js';
 ```
 
 ## Reference
-1. http://tobiasahlin.com/blog/chartjs-charts-to-get-you-started/
+1. https://medium.com/innoventes/adding-a-graph-to-your-angular-app-eede3dd8bf1c
+2. http://tobiasahlin.com/blog/chartjs-charts-to-get-you-started/
